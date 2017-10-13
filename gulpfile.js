@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var babelify = require("babelify");
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var concat = require('gulp-concat');
@@ -25,6 +26,16 @@ gulp.task('jsBrowserify', function() {
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('jsBrowserify', ['concatInterface'], function() {
+  return browserify({ entries: ['./tmp/allConcat.js']})
+    .transform(babelify.configure({
+      presets: ["es2015"]
+    }))
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(gulp.dest('./build/js'))
 });
 
 gulp.task('concatInterface', function() {

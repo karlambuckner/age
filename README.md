@@ -9,7 +9,8 @@
 _In this web application, the user can discover their many ages and life expectancies. There is a conversion from years to seconds. There is also a conversion from age on Earth to age on other planets like Mercury, Venus, Mars and Jupiter. Far out!_
 
 ## Specifications
-(04/05/1990 is 27 yeaars for the example)
+(04/05/1990 is 27 years for the example)
+
 User can enter DOB and find their age in years compared to current time
 * _Input: "04/05/1990"_
 * _Output: "27"_

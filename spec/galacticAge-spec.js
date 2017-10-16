@@ -38,4 +38,16 @@ describe('GalacticAge', () {
   it('converts years on Earth to years on Jupiter', function() {
     expect(test_galacticAge.ageOnJupiter()).toEqual(320);
   });
+
+  it('calculates life expectancy', function() {
+    expect(test_galacticAge.lifeExpectancy("female", "northAmerica", "yes", "no")).toEqual(85);
+  });
+
+  it('tells user how much time left to live', function() {
+    expect(test_galacticAge.yearsLeftEarth(27, 85)).toEqual(58);
+  });
+
+  it('tells user how far past life expectancy lived', function() {
+      expect(test_galacticAge.overLifeExpectancy(85, 75)).toEqual(10)
+  });
 });

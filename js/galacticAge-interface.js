@@ -1,7 +1,7 @@
 import { GalacticAge } from './../js/galacticAge.js';
 
 $(document).ready(function() {
-  $('#age-form').submit(function(event) {
+  $('#age-form').submit(function(event)) {
     event.preventDefault();
     $('#dateShow').text(moment());
       let birthdate = $('#birthdate').val();
@@ -23,5 +23,5 @@ $(document).ready(function() {
       $('#ageMars').text(userAgeMars);
       let userAgeJupiter = userAge.ageOnJupiter();
       $('#ageJupiter').text(userAgeJupiter);
-  }
-}
+  };
+});

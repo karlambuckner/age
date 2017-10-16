@@ -1,5 +1,5 @@
 //moment isn't working//
-var moment = require('moment');
+// var moment = require('moment');
 
 export class GalacticAge {
   constructor(birthdate) {

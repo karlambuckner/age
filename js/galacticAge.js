@@ -35,17 +35,25 @@ ageOnJupiter() {
 }
 //life expectancy across different planets//
 lifeExpectancy(gender, continent, exercise, smoker){
-  let expEarth = 0;
-  let expMercury = 0;
-  let expVenus = 0;
-  let expMars = 0;
-  let expJupiter = 0;
+  // let expEarth = 0;
+  // let expMercury = 0;
+  // let expVenus = 0;
+  // let expMars = 0;
+  // let expJupiter = 0;
+  let exp = [5];
+
   if(gender === "female" && continent === "northAmerica" && exercise === "yes" && smoker === "no"){
-    expEarth = 85;
-    expMercury = 20;
-    expVenus = 53;
-    expMars = 160;
-    expJupiter = 1008;
+    // expEarth = 85;
+    // expMercury = 20;
+    // expVenus = 53;
+    // expMars = 160;
+    // expJupiter = 1008;
+    exp[0] = 85;
+    exp[1] = 20;
+    exp[2] = 53;
+    exp[3] = 160;
+    exp[4] = 1008;
+    return exp;
   }
   else if(gender === "female" && continent === "southAmerica" && exercise === "yes" && smoker === "no"){
     expEarth = 83;
@@ -134,37 +142,37 @@ lifeExpectancy(gender, continent, exercise, smoker){
 }
 //so therefore, years left on each planet
 yearsLeftEarth(gender, continent, exercise, smoker) {
-  let lifeExp = this.lifeOnEarth(gender, continent, exercise, smoker);
+  let lifeExp = this.lifeExpectancy(gender, continent, exercise, smoker);
   let age = this.ageInYears();
-  let yearsLeft = lifeExpect - age;
+  let yearsLeft = lifeExp - age;
   return yearsLeft;
 }
 
 yearsLeftMercury(gender, continent, exercise, smoker) {
-  let lifeExp= this.lifeOnMercury(gender, continent, exercise, smoker);
+  let lifeExp= this.lifeExpectancy(gender, continent, exercise, smoker);
   let age = this.ageOnMercury();
-  let yearsLeft = lifeExpect - age;
+  let yearsLeft = lifeExp - age;
   return yearsLeft;
 }
 
 yearsLeftVenus(gender, continent, exercise, smoker) {
-  let lifeExp = this.lifeOnVenus(gender, continent, exercise, smoker);
+  let lifeExp = this.lifeExpectancy(gender, continent, exercise, smoker);
   let age = this.ageOnVenus();
-  let yearsLeft = lifeExpect - age;
+  let yearsLeft = lifeExp - age;
   return yearsLeft;
 }
 
 yearsLeftMars(gender, continent, exercise, smoker) {
-  let lifeExp = this.lifeOnMars(gender, continent, exercise, smoker);
+  let lifeExp = this.lifeExpectancy(gender, continent, exercise, smoker);
   let age = this.ageOnMars();
-  let yearsLeft = lifeExpect - age;
+  let yearsLeft = lifeExp - age;
   return yearsLeft;
 }
 
 yearsLeftJupiter(gender, continent, exercise, smoker) {
-  let lifeExp = this.lifeOnJupiter(gender, continent, exercise, smoker);
+  let lifeExp = this.lifeExpectancy(gender, continent, exercise, smoker);
   let age = this.ageOnJupiter();
-  let yearsLeft = lifeExpect - age;
+  let yearsLeft = lifeExp - age;
   return yearsLeft;
 }
 //if user surpasses life expectancy//

@@ -23,5 +23,7 @@ $(document).ready(function() {
       $('#ageMars').text(userAgeMars);
       let userAgeJupiter = userAge.ageOnJupiter();
       $('#ageJupiter').text(userAgeJupiter);
+      let yearsLeftEarth = userAge.yearsLeftEarth(gender, continent, exercise, smoker);
+      $('#timeLeftEarth').text(yearsLeftEarth);
     });
   });

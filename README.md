@@ -22,19 +22,19 @@ User can convert age in years on Earth to age in seconds
 
 User can convert ago on earth to age on Mercury
 * _Input: "04/05/1990"_
-* _Output: "6.48"_
+* _Output: 6_
 
 User can convert ago on earth to age on Venus
 * _Input: "04/05/1990"_
-* _Output: "16.74"_
+* _Output: 17_
 
 User can convert ago on earth to age on Mars
 * _Input: "04/05/1990"_
-* _Output: "50.76"_
+* _Output: 51_
 
 User can convert ago on earth to age on Jupiter
 * _Input: "04/05/1990"_
-* _Output: "320.22"_
+* _Output: 320_
 
 ## Setup/Installation Requirements
 

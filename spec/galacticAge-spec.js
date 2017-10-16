@@ -24,18 +24,18 @@ describe('GalacticAge', () {
   });
 
   it('converts years on Earth to years on Mercury', function() {
-    expect(test_galacticAge.ageOnMercury()).toEqual(6.48);
+    expect(test_galacticAge.ageOnMercury()).toEqual(6);
   });
 
   it('converts years on Earth to years on Venus', function() {
-    expect(test_galacticAge.ageOnVenus()).toEqual(16.74);
+    expect(test_galacticAge.ageOnVenus()).toEqual(17);
   });
 
   it('converts years on Earth to years on Mars', function() {
-    expect(test_galacticAge.ageOnMars()).toEqual(50.76);
+    expect(test_galacticAge.ageOnMars()).toEqual(51);
   });
 
   it('converts years on Earth to years on Jupiter', function() {
-    expect(test_galacticAge.ageOnJupiter()).toEqual(320.22);
+    expect(test_galacticAge.ageOnJupiter()).toEqual(320);
   });
 });

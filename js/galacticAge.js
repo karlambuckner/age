@@ -1,6 +1,3 @@
-//moment isn't working//
-// var moment = require('moment');
-
 export class GalacticAge {
   constructor(birthdate) {
     this.birthdate = birthdate;
@@ -44,11 +41,11 @@ lifeExpectancy(gender, continent, exercise, smoker){
   let expMars = 0;
   let expJupiter = 0;
   if(gender === "female" && continent === "northAmerica" && exercise === "yes" && smoker === "no"){
-    return expEarth = 85;
-    return expMercury = 20;
-    return expVenus = 53;
-    return expMars = 160;
-    return expJupiter = 1008;
+    expEarth = 85;
+    expMercury = 20;
+    expVenus = 53;
+    expMars = 160;
+    expJupiter = 1008;
   }
   else if(gender === "female" && continent === "southAmerica" && exercise === "yes" && smoker === "no"){
     expEarth = 83;

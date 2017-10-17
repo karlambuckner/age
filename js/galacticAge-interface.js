@@ -7,8 +7,6 @@ $(document).ready(function() {
       let birthdate = $('#birthdate').val();
       let gender = $('input[name=gender]:checked').val();
       let continent = $('select#continent:selected').val();
-      let exercise = $('input[name=exercise]:checked').val();
-      let smoker = $('input[name=smoker]:checked').val();
       $('#birthdateShow').text(birthdate);
       let userAge = new GalacticAge(birthdate);
       let userAgeEarth = userAge.ageInYears();
@@ -23,7 +21,8 @@ $(document).ready(function() {
       $('#ageMars').text(userAgeMars);
       let userAgeJupiter = userAge.ageOnJupiter();
       $('#ageJupiter').text(userAgeJupiter);
-      let yearsLeftEarth = userAge.yearsLeftEarth(gender, continent, exercise, smoker);
-      $('#timeLeftEarth').text(yearsLeftEarth);
+
+      // let yearsLeftEarth = userAge.yearsLeftEarth(gender, continent);
+      // $('#timeLeftEarth').text(yearsLeftEarth);
     });
   });

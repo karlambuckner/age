@@ -21,8 +21,15 @@ $(document).ready(function() {
       $('#ageMars').text(userAgeMars);
       let userAgeJupiter = userAge.ageOnJupiter();
       $('#ageJupiter').text(userAgeJupiter);
-
-      // let yearsLeftEarth = userAge.yearsLeftEarth(gender, continent);
-      // $('#timeLeftEarth').text(yearsLeftEarth);
+      let yearsLeftOnEarth = userAge.yearsLeftEarth(gender, continent);
+      $('#timeLeftEarth').text(yearsLeftEarth);
+      let yearsLeftOnMercury = userAge.yearsLeftMercury(gender, continent);
+      $('#timeLeftMercury').text(yearsLeftEarth);
+      let yearsLeftOnVenus = userAge.yearsLeftVenus(gender, continent);
+      $('#timeLeftVenus').text(yearsLeftEarth);
+      let yearsLeftOnMars = userAge.yearsLeftMars(gender, continent);
+      $('#timeLeftMars').text(yearsLeftEarth);
+      let yearsLeftOnJupiter = userAge.yearsLeftJupiter(gender, continent);
+      $('#timeLeftJupiter').text(yearsLeftEarth);
     });
   });

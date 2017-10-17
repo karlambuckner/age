@@ -18,7 +18,7 @@ describe('GalacticAge', function () {
   });
 
   it('determines age by the difference between current time and entered DOB', function() {
-    expect(myAge.ageInYears()).toEqual(27)
+    expect(myAge.ageInYears()).toEqual(27);
   });
 
   it('takes user input of age in years on Earth and converts to seconds', function() {
@@ -42,7 +42,7 @@ describe('GalacticAge', function () {
   });
 
   it('calculates life expectancy', function() {
-    expect(myAge.lifeExpectancy("female", "northAmerica", "yes", "no")).toEqual(85);
+    expect(myAge.lifeExpectancy("female", "northAmerica")).toEqual(84);
   });
 
   it('tells user how much time left to live', function() {
@@ -50,6 +50,6 @@ describe('GalacticAge', function () {
   });
 
   it('tells user how far past life expectancy lived', function() {
-      expect(surpassExp.overLifeExpectancy(85, 75)).toEqual(10);
+      expect(surpassExp.overLifeExpectancy(85, 75)).toEqual(10)
   });
 });
